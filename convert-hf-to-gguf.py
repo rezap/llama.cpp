@@ -367,45 +367,9 @@ class Model:
         # NOTE: if you get an error here, you need to update the convert-hf-to-gguf-update.py script
         #       or pull the latest version of the model from Huggingface
         #       don't edit the hashes manually!
-        if chkhsh == "0ef9807a4087ebef797fc749390439009c3b9eda9ad1a097abbe738f486c01e5":
-            # ref: https://huggingface.co/meta-llama/Meta-Llama-3-8B
-            res = "llama-bpe"
-        if chkhsh == "049ecf7629871e3041641907f3de7c733e4dbfdc736f57d882ba0b0845599754":
-            # ref: https://huggingface.co/deepseek-ai/deepseek-llm-7b-base
-            res = "deepseek-llm"
-        if chkhsh == "347715f544604f9118bb75ed199f68779f423cabb20db6de6f31b908d04d7821":
-            # ref: https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
-            res = "deepseek-coder"
-        if chkhsh == "8aeee3860c56296a157a1fe2fad249ec40aa59b1bb5709f4ade11c4e6fe652ed":
-            # ref: https://huggingface.co/tiiuae/falcon-7b
-            res = "falcon"
         if chkhsh == "0876d13b50744004aa9aeae05e7b0647eac9d801b5ba4668afc01e709c15e19f":
-            # ref: https://huggingface.co/BAAI/bge-small-en-v1.5
-            res = "bert-bge"
-        if chkhsh == "b6dc8df998e1cfbdc4eac8243701a65afe638679230920b50d6f17d81c098166":
-            # ref: https://huggingface.co/mosaicml/mpt-7b
-            res = "mpt"
-        if chkhsh == "35d91631860c815f952d711435f48d356ebac988362536bed955d43bfa436e34":
-            # ref: https://huggingface.co/bigcode/starcoder2-3b
-            res = "starcoder"
-        if chkhsh == "3ce83efda5659b07b1ad37ca97ca5797ea4285d9b9ab0dc679e4a720c9da7454":
-            # ref: https://huggingface.co/openai-community/gpt2
-            res = "gpt-2"
-        if chkhsh == "6221ad2852e85ce96f791f476e0b390cf9b474c9e3d1362f53a24a06dc8220ff":
-            # ref: https://huggingface.co/smallcloudai/Refact-1_6-base
-            res = "refact"
-        if chkhsh == "9c2227e4dd922002fb81bde4fc02b0483ca4f12911410dee2255e4987644e3f8":
-            # ref: https://huggingface.co/CohereForAI/c4ai-command-r-v01
-            res = "command-r"
-        if chkhsh == "e636dc30a262dcc0d8c323492e32ae2b70728f4df7dfe9737d9f920a282b8aea":
-            # ref: https://huggingface.co/Qwen/Qwen1.5-7B
-            res = "qwen2"
-        if chkhsh == "b6dc8df998e1cfbdc4eac8243701a65afe638679230920b50d6f17d81c098166":
-            # ref: https://huggingface.co/allenai/OLMo-1.7-7B-hf
-            res = "olmo"
-        if chkhsh == "a8594e3edff7c29c003940395316294b2c623e09894deebbc65f33f1515df79e":
-            # ref: https://huggingface.co/databricks/dbrx-instruct
-            res = "dbrx"
+            # ref: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+            res = "mini-l6"
 
         if res is None:
             logger.warning("\n")
